@@ -9,13 +9,16 @@ import { SobreComponent } from './Components/sobre/sobre.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { AgendamentoComponent } from './Components/agendamento/agendamento.component';
+import { AgendamentoOptions } from './Data/AgendamentoOptions';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HeroComponent,
-    SobreComponent
+    SobreComponent,
+    AgendamentoComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AgendamentoOptions],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

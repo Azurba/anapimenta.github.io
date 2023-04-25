@@ -1,0 +1,26 @@
+<div class="container text-center">
+    <div class="col-xs-12 col-md-12" style="margin: 25px 25px 70px 25px;">
+        <h1 class="fw-bolder" style="margin: 20px;">Agendamento</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div *ngFor="let item of agendamentoInfo" class="col-xs-12 col-lg-4 d-flex justify-content-center" >
+            <div class="card border-info" style="width: 23rem; margin-bottom: 40px;">
+                <img class="card-img-top" src={{item.img}} alt="Card image cap">
+                <div class="card-body">
+                    <h4 style="margin-bottom: 10px; font-weight: bolder;color: rgb(96, 188, 249)" >{{item.title}}</h4>
+                    <p class="card-text" style="margin-top: 10px;">{{item.address}}</p>
+                </div>
+                <div class="card-body">
+                    <button (click)="clickWhatsap(item.link)" type="button" class="btn" style="background-color: rgb(96, 188, 249)"><mat-icon svgIcon='whatsap' style="margin-right: 10px;"></mat-icon>{{item.button}}</button>
+                </div>
+                <div *ngFor="let icons of item.icon; let index = index" class="card-footer border-info" style="justify-content: center;">
+                    <h4 style="font-weight: bolder;">Contato:</h4>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                      <mat-icon svgIcon={{icons}}></mat-icon>
+                      <p class="card-title" style="color: black; margin-top: 15px; margin-left: 10px;">{{item.contact?.[index]}}</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
