@@ -27,7 +27,7 @@
 </div> -->
   
 	<!-- Background image -->
-	<div class="p-5 text-center bg-image" style="
+	<!-- <div class="p-5 text-center bg-image" style="
 		background-image: url('https://www.oshamanual.com/media/wysiwyg/Blog/wtY8ZACzrRkXrj09BV5hJFg0Pp7Hk9E91650547338.jpg');
 		height: 400px;
 		background-repeat: no-repeat;
@@ -43,6 +43,41 @@
 		  </div>
 		</div>
 	  </div>
-	</div>
+	</div> -->
 	<!-- Background image -->
 
+	<mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+		<mdb-carousel-item>
+		  <img
+			src="./assets/img/1.jpeg"
+			class="d-block w-100"
+			alt="..."
+		  />
+		  <div class="carousel-caption d-none d-md-block">
+			<h5>First slide label</h5>
+			<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+		  </div>
+		</mdb-carousel-item>
+		<mdb-carousel-item>
+		  <img
+			src="./assets/img/2.jpeg"
+			class="d-block w-100"
+			alt="..."
+		  />
+		  <div class="carousel-caption d-none d-md-block">
+			<h5>Second slide label</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		  </div>
+		</mdb-carousel-item>
+		<mdb-carousel-item>
+		  <img
+			src="./assets/img/1"
+			class="d-block w-100"
+			alt="..."
+		  />
+		  <div class="carousel-caption d-none d-md-block">
+			<h5>Third slide label</h5>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+		  </div>
+		</mdb-carousel-item>
+	  </mdb-carousel>

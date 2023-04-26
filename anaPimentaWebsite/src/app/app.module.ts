@@ -11,6 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { AgendamentoComponent } from './Components/agendamento/agendamento.component';
 import { AgendamentoOptions } from './Data/AgendamentoOptions';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
 @NgModule({
   declarations: [
@@ -18,14 +19,15 @@ import { AgendamentoOptions } from './Data/AgendamentoOptions';
     HeaderComponent,
     HeroComponent,
     SobreComponent,
-    AgendamentoComponent
+    AgendamentoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MdbCarouselModule
   ],
   providers: [AgendamentoOptions],
   bootstrap: [AppComponent]
