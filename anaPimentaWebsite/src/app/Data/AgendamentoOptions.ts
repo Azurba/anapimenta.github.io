@@ -6,7 +6,7 @@ export class AgendamentoOptions{
             title: 'Consultorio Particular',
             address: 'Guanabara Office Center - R. Visc. de Taunay, 420 - Vila Itapura, Campinas - SP - Sala 14',
             img: 'https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*',
-            contact: ['(19)3236-1411'],
+            contact: ['(19)99116-0033'],
             icon: ['phone'],
             button: ['Chame no Whats'],
             link: 'https://api.whatsapp.com/send/?phone=5519991160033'
