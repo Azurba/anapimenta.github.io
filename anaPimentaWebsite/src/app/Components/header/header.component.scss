@@ -1,3 +1,22 @@
 nav{
     background-color: rgb(96, 188, 249);
 }
+
+#kalista{
+  font-family: 'Kalista', sans-serif;
+  font-size: 33px;
+  margin-right: 30px;
+  color: white;
+}
+
+#menu{
+  font-size: 20px;
+  color: white;
+  margin-left: 35px;
+}
+
+
+  @font-face {
+    font-family: 'Kalista';
+    src: url('/assets/font/Kalista.ttf') format('truetype');
+  }
