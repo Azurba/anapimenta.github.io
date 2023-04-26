@@ -1,0 +1,4 @@
+export class Servicos{
+    consultorio : string[] = ['Odontologia e Clínica Geral', 'Odontología Pediátrica', 'Próteses', 'Harmonização Oro-facial', 'Aplicação de toxina botulínica','Aplicação de Acido hialurônico para preenchimentos e remodelação facial', 'Aplicação de bio estimuladores' , 'Aplicação de fios de PDO para tração e estímulo de colágeno']
+    faceDoctor : string[] =  ['Harmonização Oro-facial', 'Aplicação de toxina botulínica','Aplicação de Acido hialurônico para preenchimentos e remodelação facial', 'Aplicação de bio estimuladores' , 'Aplicação de fios de PDO para tração e estímulo de colágeno']
+}

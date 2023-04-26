@@ -1,0 +1,22 @@
+<div class="container text-center">
+    <div style="margin: 25px 25px 70px 25px;">
+        <h1 class="fw-bolder" style="margin: 20px;">Serviços</h1>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th scope="col">Serviços</th>
+              <th scope="col">Consultório</th>
+              <th scope="col">Face Doctor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of servicos; let i = index">
+                <td>{{item}}</td>
+                <td><mat-icon svgIcon={{iconsC[i]}} id="checkX" [ngStyle]="{ color: iconsC[i] === 'check' ? 'green' : 'red' }"></mat-icon></td>
+                <td><mat-icon svgIcon={{iconsX[i]}} id="checkX" [ngStyle]="{ color: iconsX[i] === 'check' ? 'green' : 'red' }"></mat-icon></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
