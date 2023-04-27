@@ -20,30 +20,22 @@
 			<button type="button" class="btn">Agende uma Consulta!</button>
 		</div>
 	  </div>
-	  
 	</div>
-	
 	<div class="col-12 col-lg-6">
-	  <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
-		<mdb-carousel-item>
-		  <img src="./assets/img/1.jpeg" class="d-block" alt="...">
-		</mdb-carousel-item>
-		<mdb-carousel-item>
-		  <img src="./assets/img/2.jpeg" class="d-block" alt="...">
-		</mdb-carousel-item>
-		<mdb-carousel-item>
-		  <img src="./assets/img/3.jpeg" class="d-block" alt="...">
-		</mdb-carousel-item>
-		<mdb-carousel-item>
-			<img src="./assets/img/4.JPG" class="d-block" alt="...">
-		  </mdb-carousel-item>
-		  <mdb-carousel-item>
-			<img src="./assets/img/5.JPG" class="d-block" alt="...">
-		  </mdb-carousel-item>
-		  <mdb-carousel-item>
-			<img src="./assets/img/6.JPG" class="d-block" alt="...">
-		  </mdb-carousel-item>
-	  </mdb-carousel>
+		<ng-container *ngIf="usePicturesDesktop; else mobileView">
+			<mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'" [dark]="true">
+			  <mdb-carousel-item *ngFor="let pic of picturesDesktop">
+				<img src={{pic}} class="d-block" alt="...">
+			  </mdb-carousel-item>
+			</mdb-carousel>
+		</ng-container>
+		  <ng-template #mobileView>
+			<mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'" [dark]="true">
+			  <mdb-carousel-item *ngFor="let pic of picturesMobile">
+				<img src={{pic}} class="d-block w-100" alt="...">
+			  </mdb-carousel-item>
+			</mdb-carousel>
+		</ng-template>
 	</div>
   </div>
   
