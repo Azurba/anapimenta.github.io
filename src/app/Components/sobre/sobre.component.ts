@@ -19,6 +19,8 @@ export class SobreComponent {
     this.matIconRegistry.addSvgIcon('check', this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/check.svg'))
     this.matIconRegistry.addSvgIcon('x', this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/x.svg'))
     this.matIconRegistry.addSvgIcon('bug', this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/bug.svg'))
+    this.matIconRegistry.addSvgIcon('star', this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/star.svg'))
+    this.matIconRegistry.addSvgIcon('starEmpty', this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/starEmpty.svg'))
   }
 
   navigateTo(link : string){

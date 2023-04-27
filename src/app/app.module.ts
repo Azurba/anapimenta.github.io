@@ -15,6 +15,8 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { ServicosComponent } from './Components/servicos/servicos.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { DepoimentosComponent } from './Components/depoimentos/depoimentos.component';
+import { Depoimentos } from './Data/Depoimentos';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {MatDividerModule} from '@angular/material/divider';
     AgendamentoComponent,
     ServicosComponent,
     FooterComponent,
+    DepoimentosComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MdbCarouselModule,
     MatDividerModule
   ],
-  providers: [AgendamentoOptions],
+  providers: [AgendamentoOptions, Depoimentos],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
