@@ -27,4 +27,8 @@ export class HeroComponent {
     this.usePicturesDesktop = width > 768; // Set breakpoint as per your requirement
   }
 
+  navigateTo(){
+    window.open('https://api.whatsapp.com/send/?phone=5519991160033');
+  }
+
 }

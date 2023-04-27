@@ -13,6 +13,7 @@ import { AgendamentoComponent } from './Components/agendamento/agendamento.compo
 import { AgendamentoOptions } from './Data/AgendamentoOptions';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { ServicosComponent } from './Components/servicos/servicos.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ServicosComponent } from './Components/servicos/servicos.component';
     SobreComponent,
     AgendamentoComponent,
     ServicosComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
