@@ -8,7 +8,7 @@ export class AgendamentoOptions{
             img: './assets/img/7.JPG',
             contact: ['(19)99116-0033'],
             icon: ['phone'],
-            button: ['Chame no Whats'],
+            button: ['Chame no Whatsapp'],
             link: 'https://api.whatsapp.com/send/?phone=5519991160033'
         },
 
@@ -18,7 +18,7 @@ export class AgendamentoOptions{
             img: './assets/img/8.JPG',
             contact: ['(19)3367-5141'],
             icon: ['phone'],
-            button: ['Chame no Whats'],
+            button: ['Chame no Whatsapp'],
             link: 'https://api.whatsapp.com/send/?phone=5519996543377'
         }
     ];
