@@ -14,6 +14,7 @@ import { AgendamentoOptions } from './Data/AgendamentoOptions';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { ServicosComponent } from './Components/servicos/servicos.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FooterComponent } from './Components/footer/footer.component';
     BrowserAnimationsModule,
     MatIconModule,
     HttpClientModule,
-    MdbCarouselModule
+    MdbCarouselModule,
+    MatDividerModule
   ],
   providers: [AgendamentoOptions],
   bootstrap: [AppComponent]

@@ -1,5 +1,7 @@
 img{
-    height: 700px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* or object-fit: cover; */
 }
 
 h1, h4, a{
@@ -24,7 +26,7 @@ h1{
     transform: scale(1.8);
     margin-bottom: 20px;
     color: rgb(96, 188, 249);
-    margin-top: 40px;
+    margin-top: 15px;
   }
 
   p{
