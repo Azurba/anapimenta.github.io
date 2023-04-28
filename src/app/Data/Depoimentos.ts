@@ -14,7 +14,7 @@ export class Depoimentos{
             age: null,
             city: null,
             rate: 3,
-            comment: 'akfjsadl;kfjsa;dlkfjas;lkdfjas;ldkfjas;lkdfjas;lkdfjas;ld',
+            comment: 'akfjsad;kfjsa;dlkfjas;lkdfjas;ldkfjas;lkdfjas;lkdfjas;ld',
             date: '27/04/2022'
         },
 
