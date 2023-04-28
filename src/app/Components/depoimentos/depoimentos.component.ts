@@ -18,8 +18,4 @@ export class DepoimentosComponent {
   range(n: number): Array<number> {
     return Array.from({length: n}, (_, i) => i);
   }
-
-  navigateTo() {
-    window.open('https://forms.gle/rH8cLngziFCXaYzs7');
-  }
 }
