@@ -1,7 +1,8 @@
 export interface Depoimento{
     name : string | undefined;
-    age : number | undefined;
-    city : string | undefined;
-    rate : number;
-    comment : string | undefined;
+    age : number | null;
+    city : string | null;
+    rate : number | undefined;
+    comment : string | null;
+    date: string | undefined;
 }

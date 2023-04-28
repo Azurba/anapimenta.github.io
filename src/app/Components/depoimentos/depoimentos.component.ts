@@ -8,6 +8,7 @@ import { Depoimento } from 'src/app/Models/Depoimento';
   styleUrls: ['./depoimentos.component.scss']
 })
 export class DepoimentosComponent {
+
   depoimentosArray : Array<Depoimento> = [];
 
   constructor(private _depoimentos : Depoimentos){
@@ -16,5 +17,9 @@ export class DepoimentosComponent {
 
   range(n: number): Array<number> {
     return Array.from({length: n}, (_, i) => i);
+  }
+
+  navigateTo() {
+    window.open('https://forms.gle/rH8cLngziFCXaYzs7');
   }
 }
