@@ -16,6 +16,7 @@ import { ServicosComponent } from './Components/servicos/servicos.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { Depoimentos } from './Data/Depoimentos';
+import { DepoimentosComponent } from './Components/depoimentos/depoimentos.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { Depoimentos } from './Data/Depoimentos';
     AgendamentoComponent,
     ServicosComponent,
     FooterComponent,
+    DepoimentosComponent,
   ],
   imports: [
     BrowserModule,
