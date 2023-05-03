@@ -13,7 +13,9 @@
                     <p class="card-text" style="margin-top: 10px;">{{item.address}}</p>
                 </div>
                 <div class="card-body">
-                    <button (click)="clickWhatsap(item.link)" type="button" class="btn" style="background-color: rgb(96, 188, 249)"><mat-icon svgIcon='whatsap' style="margin-right: 10px;"></mat-icon>{{item.button}}</button>
+                    <button (click)="clickWhatsap(item.link)" type="button" class="btn" style="background-color: rgb(96, 188, 249); color: white; display: inline-block; text-align: center; padding-top: 5px;">
+                        <mat-icon svgIcon='whatsap' style="vertical-align: middle; margin-right: 10px;"></mat-icon>{{item.button}}
+                      </button>
                 </div>
                 <div *ngFor="let icons of item.icon; let index = index" class="card-footer border-info" style="justify-content: center;">
                     <h4 style="font-weight: bolder;">Contato:</h4>

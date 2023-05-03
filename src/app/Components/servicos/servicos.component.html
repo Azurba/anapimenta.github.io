@@ -6,14 +6,14 @@
     <table class="table table-striped">
         <thead>
             <tr>
-              <th scope="col">Serviços</th>
-              <th scope="col">Consultório</th>
-              <th scope="col">Face Doctor</th>
+              <th scope="col"><h4>Serviços</h4></th>
+              <th scope="col"><h4>Consultório</h4></th>
+              <th scope="col"><h4>Face Doctor</h4></th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let item of servicos; let i = index">
-                <td>{{item}}</td>
+                <td><p>{{item}}</p></td>
                 <td><mat-icon svgIcon={{iconsC[i]}} id="checkX" [ngStyle]="{ color: iconsC[i] === 'check' ? 'green' : 'red' }"></mat-icon></td>
                 <td><mat-icon svgIcon={{iconsX[i]}} id="checkX" [ngStyle]="{ color: iconsX[i] === 'check' ? 'green' : 'red' }"></mat-icon></td>
             </tr>
