@@ -10,21 +10,31 @@ export class Depoimentos{
             // rate: 3,
             // comment: 'akfjsadl;kfjsa;dlkfjas;lkdfjas;ldkfjas;lkdfjas;lkdfjas;ld',
             // date: '27/04/2022'
-            name: 'Teste',
-            age: null,
-            city: null,
-            rate: 3,
-            comment: 'akfjsad;kfjsa;dlkfjas;lkdfjas;ldkfjas;lkdfjas;lkdfjas;ld',
-            date: '27/04/2022'
+            name: 'Maria Bernardete',
+            age: 56,
+            city: "Campinas",
+            rate: 5,
+            comment: ' "Fui atendida por uma profissional séria, transparente e competente. Continue assim. Precisamos de mais profissionais como a Dra. Ana Cláudia." ',
+            date: '04/05/2023'
         },
 
         {
-            name: 'Teste2',
-            age: null,
-            city: null,
+            name: 'Heloisa',
+            age: 61,
+            city: "Campinas",
             rate: 5,
-            comment: 'akfjsadl;kfjsa;dlkfjas;lkdfjas;ldkfjas;lkdfjas;lkdfjas;ld',
-            date: '27/04/2022'
+            comment: '"Sempre muito responsável, dedicada, prestativa e competente"',
+            date: '04/05/2023'
+        },
+
+        {
+            name: 'Luis Fausto',
+            age: 60,
+            city: "Campinas",
+            rate: 5,
+            comment: '"Dra. Ana, sempre atenciosa e competente."',
+            date: '04/05/2023'
         }
+
     ];
 }
