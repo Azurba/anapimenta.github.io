@@ -2,13 +2,19 @@ import { Depoimento } from "../Models/Depoimento";
 
 export class Depoimentos{
     depoimentosArray : Array<Depoimento> = [
+        
         {
             // name: 'Anônimo',
-            // age: null,
-            // city: null,
-            // rate: 3,
-            // comment: "",
-            // date: '27/04/2022'
+            name: 'Irani Ferreira ',
+            age: 59,
+            city: "Campinas",
+            rate: 5,
+            comment: ' "Sempre muito bem atendida" ',
+            date: '05/05/2023'
+        },
+        
+        {
+            // name: 'Anônimo',
             name: 'Maria Bernardete',
             age: 56,
             city: "Campinas",
