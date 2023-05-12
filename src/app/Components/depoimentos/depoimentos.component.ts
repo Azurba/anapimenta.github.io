@@ -18,7 +18,7 @@ export class DepoimentosComponent {
     return Array.from({length: n}, (_, i) => i);
   }
 
-  navigateTo() {
-    window.open('https://g.page/r/CdDOajySumeREAI/review');
+  navigateTo(link : string) {
+    window.open(link);
   }
 }

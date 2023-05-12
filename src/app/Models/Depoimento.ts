@@ -5,4 +5,5 @@ export interface Depoimento{
     rate : number | undefined;
     comment : string | null;
     date: string | undefined;
+    img: string | undefined;
 }
