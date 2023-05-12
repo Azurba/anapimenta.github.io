@@ -9,7 +9,8 @@ import { Depoimento } from 'src/app/Models/Depoimento';
 })
 export class DepoimentosComponent {
   depoimentosArray : Array<Depoimento> = [];
-
+  showDepoimentosOverlay: boolean = false;
+  
   constructor(private _depoimentos : Depoimentos){
     this.depoimentosArray = _depoimentos.depoimentosArray;
   }
@@ -20,5 +21,13 @@ export class DepoimentosComponent {
 
   navigateTo(link : string) {
     window.open(link);
+  }
+
+  openDepoimentosOverlay() {
+    this.showDepoimentosOverlay = true;
+  }
+
+  closeDepoimentosOverlay() {
+    this.showDepoimentosOverlay = false;
   }
 }

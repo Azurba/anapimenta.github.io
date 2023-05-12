@@ -5,7 +5,7 @@
         <h1 class="fw-bolder" style="margin: 20px;">Avaliações e Depoimentos</h1>
     </div>
     <div class="row justify-content-center">
-        <div *ngFor="let item of depoimentosArray" class="col-xs-12 col-md-4 col-lg-3 d-flex justify-content-center" >
+        <div *ngFor="let item of depoimentosArray.slice(0, 8)" class="col-xs-12 col-md-4 col-lg-3 d-flex justify-content-center" >
             <div class="card border-info" style="width: 23rem; margin-bottom: 40px;">
                 <div class="card-body">
                   <!-- <h4 *ngIf="item.age != null" style="margin-bottom: 10px; font-weight: bolder;color: rgb(96, 188, 249)" >{{item.name}}, {{item.age}} anos</h4>
@@ -57,8 +57,70 @@
           </div>
     </div>
     <button (click)="navigateTo('https://g.page/r/CdDOajySumeREAI/review')" type="button" class="btn" style="background-color: rgb(96, 188, 249); margin-bottom: 30px; color: white;">Deixe uma Avaliação!</button>
-    <button (click)="navigateTo('https://www.google.com/maps/place/Dra.+Ana+Claudia+Moutella+Pimenta/@-22.893129,-47.063872,17z/data=!4m18!1m9!3m8!1s0x94c8c75f16ed398d:0x9167ba923c6aced0!2sDra.+Ana+Claudia+Moutella+Pimenta!8m2!3d-22.893129!4d-47.063872!9m1!1b1!16s%2Fg%2F11stnvd5y6!3m7!1s0x94c8c75f16ed398d:0x9167ba923c6aced0!8m2!3d-22.893129!4d-47.063872!9m1!1b1!16s%2Fg%2F11stnvd5y6')" type="button" class="btn" style="background-color: rgb(96, 188, 249); margin-bottom: 30px; color: white;">Veja todas as Avaliações!</button>
+    <button (click)="openDepoimentosOverlay()" type="button" class="btn" style="background-color: rgb(96, 188, 249); margin-bottom: 30px; color: white;">Veja Todas as Avaliações</button>
   </div>
+  <div class="overlay" *ngIf="showDepoimentosOverlay">
+    <div class="overlay-content">
+      <div>
+        <button (click)="closeDepoimentosOverlay()" type="button" class="btn btn-danger" style="margin-bottom: 30px; color: white;">Fechar</button>
+      </div>
+      <div class="scrollable-content">
+        <div *ngFor="let item of depoimentosArray">
+          <div class="card border-info" style="width: 23rem; margin-bottom: 40px;">
+            <div class="card-body">
+              <!-- <h4 *ngIf="item.age != null" style="margin-bottom: 10px; font-weight: bolder;color: rgb(96, 188, 249)" >{{item.name}}, {{item.age}} anos</h4>
+              <h4 *ngIf="item.age == null" style="margin-bottom: 10px; font-weight: bolder;color: rgb(96, 188, 249)" >{{item.name}}</h4> -->
+              <h4 style="margin-bottom: 10px; font-weight: bolder;color: rgb(96, 188, 249)" >{{item.name}}</h4>
+              <img *ngIf="item.img == ''" src="./assets/img/placeholder.JPG" alt="" style="height: 40px; width: 40px;">
+              <img *ngIf="item.img != ''" src={{item.img}} alt="" style="height: 45px; width: 45px;">
+              <!-- <p *ngIf="item.city != null" class="card-text" style="margin-top: 10px;">{{item.city}} - {{item.date}}</p> -->
+              <!-- <p *ngIf="item.city == null" class="card-text" style="margin-top: 10px;">{{item.date}}</p> -->
+              <p class="card-text" style="margin-top: 10px;">{{item.date}}</p>
+              <div *ngIf="item.rate === 1">
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+              </div>
+              <div *ngIf="item.rate === 2">
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+              </div>
+              <div *ngIf="item.rate === 3">
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+              </div>
+              <div *ngIf="item.rate === 4">
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="starEmpty" style="color: gold;"></mat-icon>
+              </div>
+              <div *ngIf="item.rate === 5">
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+                <mat-icon svgIcon="star" style="color: gold;"></mat-icon>
+              </div>
+              <p class="card-text" style="margin-top: 10px;">{{item.comment}}</p>
+            </div>
+            </div>
+          </div>
+          <div>
+            <button (click)="closeDepoimentosOverlay()" type="button" class="btn btn-danger" style="margin-bottom: 30px; color: white;">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <!-- 
   https://www.google.com/search?rlz=1C1ONGR_enUS1036US1036&sxsrf=APwXEdcYpXtTS36zzLzOlfTf8bOvHAdh8A%3A1683910675437&q=Dra.%20Ana%20Claudia%20Moutella%20Pimenta&stick=H4sIAAAAAAAAAONgU1I1qLA0SbZINjdNMzRLTTG2tEixAgoZmpknJVoaGSebJSanphgsYlV0KUrUU3DMS1RwzkksTclMVPDNLy1JzclJVAjIzE3NK0kEAAPIGQpNAAAA&mat=Ceevp7VxNAEl&ved=2ahUKEwiD25CNoPD-AhVGBzQIHQtrBuoQrMcEegQICRAD#lrd=0x94c8c75f16ed398d:0x9167ba923c6aced0,1,,,, -->
