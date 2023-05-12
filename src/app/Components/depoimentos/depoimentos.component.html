@@ -19,7 +19,8 @@
         <button (click)="closeDepoimentosOverlay()" type="button" class="btn btn-danger" style="margin-bottom: 30px; color: white;">Fechar</button>
       </div>
       <div class="scrollable-content">
-        <div *ngFor="let item of depoimentosArray" style="margin-bottom: 20px;">
+        <div *ngFor="let item of depoimentosArray.slice().reverse()" style="margin-bottom: 20px;">
+        <!-- <div *ngFor="let item of depoimentosArray.slice(8)" style="margin-bottom: 20px;"> -->
           <app-depoimentos-cards [item]="item"></app-depoimentos-cards>
         </div>
         <div>
