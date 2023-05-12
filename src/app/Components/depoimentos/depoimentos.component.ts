@@ -19,6 +19,6 @@ export class DepoimentosComponent {
   }
 
   navigateTo() {
-    window.open('https://forms.gle/rH8cLngziFCXaYzs7');
+    window.open('https://g.page/r/CdDOajySumeREAI/review');
   }
 }
