@@ -17,6 +17,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { Depoimentos } from './Data/Depoimentos';
 import { DepoimentosComponent } from './Components/depoimentos/depoimentos.component';
+import { DepoimentosCardsComponent } from './Components/depoimentos/depoimentos-cards/depoimentos-cards.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { DepoimentosComponent } from './Components/depoimentos/depoimentos.compo
     ServicosComponent,
     FooterComponent,
     DepoimentosComponent,
+    DepoimentosCardsComponent,
   ],
   imports: [
     BrowserModule,
