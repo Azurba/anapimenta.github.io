@@ -4,6 +4,15 @@ export class Depoimentos{
     depoimentosArray : Array<Depoimento> = [
         
         {
+            name: 'Fracisco Carraro',
+            age: null,
+            city: null,
+            rate: 5,
+            comment: '',
+            date: '05/09/2023',
+            img: ''
+        },
+        {
             name: 'Fábio Mantuani Recco',
             age: null,
             city: null,
