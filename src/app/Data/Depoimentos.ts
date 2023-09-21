@@ -4,11 +4,29 @@ export class Depoimentos{
     depoimentosArray : Array<Depoimento> = [
         
         {
-            name: 'Fracisco Carraro',
+            name: 'Maria Julia Oliveira',
+            age: null,
+            city: null,
+            rate: 5,
+            comment: 'Não tem como não elogiar. Dentista que ama o que faz, recomendo mil vezes 🤍',
+            date: '20/09/2023',
+            img: ''
+        },
+        {
+            name: 'Salette Marillac',
             age: null,
             city: null,
             rate: 5,
             comment: '',
+            date: '18/09/2023',
+            img: ''
+        },
+        {
+            name: 'Fracisco Carraro',
+            age: null,
+            city: null,
+            rate: 5,
+            comment: 'Muito bom',
             date: '05/09/2023',
             img: ''
         },
